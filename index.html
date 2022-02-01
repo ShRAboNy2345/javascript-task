@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        var search = "Lima";
+
+        let obj = [
+        {
+            name : "Shraboni",
+            email: "shraboni@gmail.com",
+            phone: "017XXXXXXX"
+        },
+    ];
+
+   
+    obj.push(
+       
+        {
+            name: "Lima",
+            email: "x@gmail.com",
+            phone: "018XXXXXX"  
+
+        },
+
+        {
+            name: "Shima",
+            email: "y@gmail.com",
+            phone: "016XXXXXX"  
+             
+        },
+);
+    
+
+ console.log(obj);
+ console.log(obj[1]);
+
+ var searchresult = obj.filter(function(name)
+ {
+    return name.name === search;
+
+  
+ }
+ )
+ console.log(searchresult[0]);
+ 
+ 
+    
+    </script>
+</body>
+</html>
